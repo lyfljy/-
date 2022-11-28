@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <style type="text/css">
+            body{
+                background:url("Css/背景.png") no-repeat;
+                width:2380px;
+                height:3368px;
+                background-size: cover;
+            }
+            .first{
+                height:100px;
+                position:relative;
+            }
+            .circle1{
+                background:url("Css/fanhui.png") no-repeat;
+                background-origin:content-box;
+                position:relative;
+                width:100px;
+                height:100px;
+                border-radius:25px;
+                position:absolute;
+                top:50%;
+                left:40px;
+            }
+            .circle2{
+                background:url("Css/info.png") no-repeat;
+                background-origin:content-box;
+                width:100px;
+                height:100px;
+                border-radius:25px;
+                position:absolute;
+                top:50%;
+                right:40px;
+            }
+            .signup{
+                position:absolute;
+                top:60%;
+                left:46%;
+                font-size:40px;
+                text-align: center;
+            }
+            .circle3{
+                background:white;
+                width:200px;
+                height:200px;
+                border-radius:100px;
+                position:absolute;
+                top:40%;
+                left:50%;
+                transform:translate(-50%,-50%);
+            }
+            .center{
+                height:400px;
+                width:40%;
+                margin-top:20px;
+                position:absolute;
+                left:30%;
+                top:60%;
+            }
+            .center>a{
+                font-size:30px;
+            }
+            *{
+                margin:0px;
+                padding:0px;
+            }
+            .Content{
+                width:500px;
+                margin:0 auto;
+                overflow: hidden;
+                display:flex;
+            
+                flex-direction: column;
+            }
+            .FN,.LN,.EA{
+                box-shadow:0px 8px 6px #4a4646;
+            }
+            .FN{
+                flex:1;
+                display:flex;
+                justify-content: flex-start;
+                height:15px;
+
+            }
+            .LN{
+                flex:2;
+                display:flex;
+                justify-content: flex-start;
+                height:15px;
+            }
+            .EA{
+                flex:3;
+                display:flex;
+                justify-content: flex-start;
+                height:15px;
+            }
+            .P{
+                flex:4;
+                display:flex;
+                justify-content: flex-start;
+            }
+            a{
+                font-size:30px;
+                color:white;
+            }
+            a1{
+                font-size:50px;
+            }
+        
+            .border{
+                width:500px;
+                height:100px;
+                background:white;
+                border-radius:100px;
+                text-align:center;
+                margin:0 auto;
+                position:relative;
+            }
+            .input submit{
+                position:absolute;
+                top:50%;
+                height:50px;
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        
+        <div class="first">
+            <div class="circle1"></div>
+            <div class="signup"><a1 style="color:white">Sign Up</a1></div>
+            <div class="circle2"></div>
+        </div>
+        <div class="circle3"></div>
+        <div class="center">
+            <div class="Content">
+                <div class="FN">
+                    <a style="color:white">First Name</a><input type="text" name="first name" style="background-color:transparent;border-width: 0px;" >
+                </div><br/>
+                <div class="LN">
+                    <a style="color:white">Last Name</a><input type="text" name="Last name" style="background-color:transparent;border-width: 0px;">
+                </div><br/>
+                <div class="EA">
+                    <a style="color:white">Email Address</a><input type="text" name="email address" style="background-color:transparent;border-width: 0px;">
+                </div><br/>
+                <div class="P">
+                    <a style="color:white">Password</a><input type="password"name="pass"style="background-color:transparent;border-width: 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="color:aquamarine" >Show</a>
+                </div>
+                <div class="border">
+                    <input type="submit" value="Sign Up">
+                </div>
+                <div class="bottom">
+                    <div class="bottom1"><a>Allready a member?</a><a style="color:aquamarine">Sign In</a></div>
+                </div>
+            </div>
+        </div>
+    </body>
